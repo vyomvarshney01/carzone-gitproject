@@ -43,16 +43,16 @@
 <div class="page_loader"></div>
 
 {%  include 'includes/topbar.html' %}
-s{%  include 'includes/navbar.html' %}
+{%  include 'includes/navbar.html' %}
 {% block content %}
 
 {% endblock %}
 
 <!-- Full Page Search -->
-<div id="full-page-search" class>
+<div id="full-page-search">
     <button type="button" class="close">×</button>
-    <form action="https://storage.googleapis.com/theme-vessel/carhouse/index.html#" class="search-header">
-        <input type="search" value="" placeholder="type keyword(s) here. Eg: audi, benz etc" />
+    <form action="{% url 'search' %}" class="search-header">
+        <input type="search" value="" placeholder="type keyword(s) here. Eg: audi, benz etc"  name='keyword'/>
         <button type="submit" class="btn btn-sm button-theme">Search</button>
     </form>
 </div>
@@ -79,6 +79,10 @@ s{%  include 'includes/navbar.html' %}
 <script src="{% static 'js/jnoty.js' %}"></script>
 <script src="{% static 'js/app.js' %}"></script>
 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script  src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+<!-- Custom javascript -->
+<script  src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
 
 </body>
 
