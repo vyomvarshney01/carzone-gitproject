@@ -26,7 +26,7 @@ SECRET_KEY = 'c-k#$n18xlzww1vs4b566#a(af042$q!)u9-8brmk@m*l+(l@%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['secure-river-46752.herokuapp.com/']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
